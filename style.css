@@ -1,16 +1,21 @@
-body {
-    font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    /* border: 1px solid red; */
+}
+body {
+    font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+width: 100vw;
 }
 
-header {
+header{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: #ffffff;
+    /* background-color: #6fdb83b7; */
     padding: 10px 20px;
     border-bottom: 1px solid #ddd;
 }
@@ -50,7 +55,7 @@ nav a:hover{
     flex: 1;
     min-width: 300px;
     padding: 20px 5px 20px 70px;
-    /* background-color: red; */
+    background-color: rgba(76, 4, 59, 0.94);
 }
 .right-section {
     flex: 1;
@@ -60,53 +65,60 @@ nav a:hover{
 }
 
 .main-content h1 {
-color: rgb(53, 53, 67);
+
+color: rgb(255, 255, 255);
 font-style: normal;
 font-weight: 700;
-font-size:3rem;
-line-height: 52px;
-font-family: "Mier bold";
+font-size:55px;
+line-height: 60px;
+margin-bottom: 60px;
+
 }
 
 .features {
     display: flex;
     gap: 15px;
-    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 60px;
 }
 
 .features div {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
 }
 
 .features img {
-    height: 20px;
+    height: 41px;
 }
 
 .download-button {
     position: relative;
-margin-top: 30px;
+    /* left: 50%;
+    transform: translate(-50%); */
 display: flex;
 align-items: center;
+justify-content: center;
 gap: 10px;
 padding: 10px 20px;
 background: rgb(159, 32, 137);
 border-radius: 4px;
 color: rgb(255, 255, 255);
 text-decoration: none;
-width: 230px;
+width: 280px;
 cursor: pointer;
 }
 
 .promo {
-    padding: 20px;
+    padding: 0px;
     text-align: center;
 }
 
 .promo img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .promo h2 {
@@ -152,7 +164,7 @@ cursor: pointer;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    display: grid;
     gap: 15px;
     flex-direction: row;
     -webkit-box-pack: start;
@@ -313,15 +325,25 @@ cursor: pointer;
     margin-top: 52px;
 }
 .download-banner-storebtn {
-    background: rgb(0, 0, 0);
-    border-radius: 4px;
+    /* background: rgb(0, 0, 0); */
     margin-left: 12px;
     cursor: pointer;
-    padding: 6px 25px;
+    padding: 10px 2px;
     width: 180px;
     height: 48px;
+    background-size:175px 50px;
+    background-repeat: no-repeat;
+   
 }
+.dbs-1{
 
+    background-image: url("https://images.meesho.com/images/pow/playstoreIcon_500.webp");
+
+}
+.dbs-2{
+    
+    background-image: url("https://images.meesho.com/images/pow/appstoreIcon_500.webp");
+}
 
 .supplier-banner {
     width: 100%;
@@ -398,33 +420,38 @@ cursor: pointer;
     position: absolute;
 }    
 .sec1{
-    margin-top: 65px;
+    padding-left: 0px;
+    padding-top: 30px;
+    width: 100%;
+    /* background-color: #007b00; */
 }
 .sec1 h1{
+font-weight: 600;
+font-size: 25px;
+line-height: 20px;
 position: relative;
 left: 5%;
-font-weight: 100;
-font-size: 35px;
-line-height: 20px;
+width: 300px;
+
 }
 
 .product-container {
     display: flex;
-    justify-content: space-between;
-    max-width: 91.5%;
+  padding-top: 12px;
+    justify-content:space-between;
+    width: 90%;
     margin: 0 auto;
-    padding: 10px;
-    /* background-color: #007b00; */
+    /* background-color: #ff9500; */
+
 }
 .product-left{
-            flex: 1;
-            max-width: 25%;
+            flex:1;
+         
             /* margin-left: 65px; */
-            /* background: #fff; */
+            /* background: #d23d3d; */
             /* border: 1px solid #ddd; */
             border-radius: 8px;
-            /* padding: 1px; */
-            margin-right: 15px;
+            
             /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
 .products-header {
@@ -433,6 +460,7 @@ line-height: 20px;
     /* background-color: gold; */
     /* align-items: center; */
     margin-bottom: 10px;
+    /* width: 100%; */
     
   
 }
@@ -450,10 +478,10 @@ line-height: 20px;
 
 .filters {
     /* display: none; */
-    padding: 15px;
+    padding: 10px;
     /* background-color: #007b00; */
-    height: auto;
-    width: 90%;
+    
+    /* width: 100%; */
     border: 1px solid rgba(92, 90, 90, 0.27);
     /* box-shadow: 0px 0px 5px black; */
     box-shadow: 0px 0px 5px rgba(141, 141, 141, 0.255);
@@ -462,7 +490,7 @@ line-height: 20px;
 }
 .filters .filter-titles{
     border-bottom: 1px solid rgba(0, 0, 0, 0.304);
-    line-height: 1px;
+    line-height: 25px;
     padding: 2px;
 }
 .filters .filter-titles h3{
@@ -478,7 +506,7 @@ line-height: 20px;
 }
 .filters ul {
     list-style: none;
-    margin-left: -40px;
+    
 }
 .filters ul li{
     font-size: 18px;
@@ -508,23 +536,22 @@ line-height: 20px;
 
 .product-grid {
     /* display: flex; */
-    width: 75%;
+    width: 80%;
     /* background-color: #7b0000; */
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr)); */
-    /* gap: 20px; */
-}
-.card-row1{
-    display: flex;
-    justify-content: space-between;
-    gap: 18px;
+    display: grid;
+    padding: 0px 10px 10px 15px;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  
 }
 .product {
     width: 250px;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden;
+    /* overflow: hidden; */
+ 
     
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -538,8 +565,9 @@ line-height: 20px;
 
 .product img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 220px;
+    /* object-fit: cover; */
+    border-radius: 7.3px 7.3px 0px 0px;
 }
 
 .product-details {
@@ -563,33 +591,6 @@ line-height: 20px;
     font-size: 14px;
     color: #888;
 }
-
-@media (min-width: 768px) {
-    .filters {
-        display: block;
-        margin-bottom: 20px;
-    }
-}
-
-
-
-
-
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-    }
-
-    .left-section, .right-section {
-        padding: 10px;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
 
 /* //////////////////////////////////// */
 
