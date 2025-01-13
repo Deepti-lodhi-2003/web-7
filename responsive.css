@@ -56,17 +56,6 @@
         .sctn-line {
           display: none;
         }
-
-       /*  .top-categories-homebannel{
-            width: 100vw;
-            margin: 4px -55px 0px;
-            background-image: url(https://images.meesho.com/images/marketing/1726468570178_1200.webp);
-            padding: 2px 2px 3px;
-            border-radius: 4px;
-            background-size: 100% 100%;
-            
-            
-        } */
         .homebannel-inner {
             display:grid;
             width: 100%;
@@ -109,23 +98,15 @@
 
         .dos-container{
             display: flex;
-            gap: 0rem;
-            margin-bottom: 60px;
-            margin-left: -55px;
-            height: 546px;
-            width: 100vw;
-            background-image: url(https://images.meesho.com/images/marketing/1726468630909_1200.webp);
-            background-size: 100% 100%;
-            flex-direction: row;
-            /* -webkit-box-pack: start; */
-            justify-content: flex-start;
-            /* -webkit-box-align: center; */
-            align-items: center;
-            padding: 0px 2px 0px 2px;
-            border-radius: 4px;
-            
+            gap: 3rem;
+            width: 90vw;
+            margin: 10px 0 30px -35px;
+            flex-direction:column;
         }
-
+        .dos-container-product1 img{
+            width: 100%;
+            margin-left: -15px;
+        }
 
     .product-grid {
         display: flex;
@@ -194,10 +175,11 @@
       
     }
 .style-container {
-   width: 100vw;
-   position: relative;
-   left: -60px;
-    flex-direction: column;
+    display: flex;
+    gap: 3rem;
+    width: 90vw;
+    margin: 10px 0 30px -35px;
+    flex-direction:column;
    
 }
 .style-container-viewbutton {
